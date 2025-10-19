@@ -28,7 +28,7 @@ def get_db_connection():
 def get_count():
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT value FROM counter WHERE id = 1")
+    cursor.execute("SELECT value FROM counter WHERE id = 2")
     result = cursor.fetchone()
     cursor.close()
     conn.close()
